@@ -10,10 +10,10 @@ const App = () => {
   return (
     <div>
       <h1>React JS Concepts 2024</h1>
-      <ClassBasedComponent />
+      {/* <ClassBasedComponent /> */}
       {/* <FunctionalComponent /> */}
 
-      {/* <ProductList listOfProducts={dummyProductData} name="Hung" city="Ha Noi"/> */}
+      <ProductList listOfProducts={dummyProductData} name="Hung" city="Ha Noi"/>
     </div>
   )
 }
