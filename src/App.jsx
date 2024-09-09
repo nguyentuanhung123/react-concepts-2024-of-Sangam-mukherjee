@@ -1,7 +1,10 @@
+/* eslint-disable no-unused-vars */
 import './App.css';
 import ClassBasedComponent from './components/class-based-component';
 import FunctionalComponent from './components/functional-conponent';
 import ProductList from './components/products';
+
+const dummyProductData = ['Product 1',  'Product 2', 'Product 3', 'Product 4'];
 
 const App = () => {
   return (
@@ -10,7 +13,7 @@ const App = () => {
       {/* <ClassBasedComponent />
       <FunctionalComponent /> */}
 
-      <ProductList />
+      <ProductList listOfProducts={dummyProductData} name="Hung" city="Ha Noi"/>
     </div>
   )
 }

@@ -1,16 +1,19 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import ProductItem from "./components/product-item";
+import './style.css';
 
-const dummyProductData = ['Product 1',  'Product 2', 'Product 3', 'Product 4'];
-const ProductList = () => {
+const ProductList = ({ name, city, listOfProducts }) => {
+    
     return (
         <div>
-            <h3>ECommer Project</h3>
+            <h3 className="title">ECommer Project</h3>
             {/* <ProductItem /> */}
+            <h4>Name is {name}, he/she is belongs to this city {city}</h4>
 
             {
-                dummyProductData.map((item, index) => (
-                    <li key={index}>{item}</li>
+                listOfProducts.map((item, index) => (
+                    <ProductItem singleProductItem={item} key={index}/>
                 ))
             }
         </div>
